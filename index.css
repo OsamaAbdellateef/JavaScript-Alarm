@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: raleway; */
+  font-family: "Kumbh Sans";
+}
+
+.main-clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  font-size: 2rem;
+  background-color: #1a1d20;
+}
+
+.clock-flex {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  min-width: 50%;
+
+  background-color: #1e272e;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.219);
+}
+
+.clock-flex-container {
+  font-family: "Kumbh Sans";
+  font-weight: 100;
+  font-size: 2rem;
+  color: white;
+  width: 80%;
+  min-height: 90%;
+  display: flex;
+  padding: 0.8rem 3rem;
+  justify-content: space-around;
+}
+
+.period {
+  font-size: 1.5rem;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  color: white;
+  width: 150px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 7px 7px 7px rgba(0, 0, 0, 0.171);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.171);
+}
+
+.btn.btn-primary {
+  background: rgb(39, 163, 39);
+}
+.btn.btn-secondary {
+  background: crimson;
+}
+
+.input-container input {
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding: 0.5rem;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  color: #ff2525;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.hide {
+  visibility: hidden;
+}
+.show {
+  visibility: visible;
+}
+
+.alarm-item {
+  background: whitesmoke;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  min-width: 50%;
+  cursor: pointer;
+}
